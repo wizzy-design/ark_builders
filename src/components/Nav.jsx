@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import icon from "../assets/logo/nav_icon.png";
+import icon from "../assets/icon/nav_icon.png";
 
 const Nav = () => {
   return (
@@ -43,7 +43,8 @@ const Parent = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 4rem;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.03);
 
   .logo {
     img {
