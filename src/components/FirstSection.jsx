@@ -94,7 +94,7 @@ const FirstSection = () => {
 // Styled Components
 
 const Parent = styled.div`
-  padding: 3rem 6rem 2rem;
+  padding: 6rem 6rem 2rem;
 `;
 
 const Write_Up = styled.div`
@@ -124,7 +124,7 @@ const Write_Up = styled.div`
 const Graphic = styled.div`
   display: flex;
   gap: 3rem;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
 
   .image {
     position: relative;
