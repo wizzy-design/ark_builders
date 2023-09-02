@@ -1,11 +1,13 @@
 import Nav from "../components/Nav";
-import Section_one from "../components/FirstSection";
+import FirstSection from "../components/FirstSection";
+import SecondSection from "../components/SecondSection";
 
 const landingPage = () => {
   return (
     <>
       <Nav />
-      <Section_one />
+      <FirstSection />
+      <SecondSection />
     </>
   );
 };
