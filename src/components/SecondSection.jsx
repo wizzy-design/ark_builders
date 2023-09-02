@@ -49,7 +49,7 @@ const SecondSection = () => {
 // Styled Components
 
 const Parent = styled.div`
-  padding: 0 6rem 2rem;
+  padding: 0 6rem;
 
   .title {
     display: flex;
@@ -71,7 +71,7 @@ const Parent = styled.div`
   }
 
   .cards {
-    padding: 6rem 0;
+    padding: 6rem 0 3rem;
   }
 `;
 

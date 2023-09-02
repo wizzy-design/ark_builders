@@ -94,7 +94,7 @@ const FirstSection = () => {
 // Styled Components
 
 const Parent = styled.div`
-  padding: 6rem 6rem 2rem;
+  padding: 6rem 6rem 4rem;
 `;
 
 const Write_Up = styled.div`
@@ -129,7 +129,7 @@ const Graphic = styled.div`
   .image {
     position: relative;
     padding: 0 0 0 0.5rem;
-    z-index: 100;
+    z-index: 90;
     img {
       width: 18rem;
       object-fit: contain;
@@ -137,7 +137,7 @@ const Graphic = styled.div`
   }
 
   .boxes {
-    z-index: 90;
+    z-index: 80;
   }
 
   #black {

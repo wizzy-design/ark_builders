@@ -47,6 +47,7 @@ const Parent = styled.div`
   padding: 0.4rem 4rem;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.03);
+  z-index: 100;
 
   .logo {
     img {
