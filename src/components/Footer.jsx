@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import logo from "../assets/icon/footer_logo.svg";
 import arrow from "../assets/icon/footer-arrow.svg";
+import socials from "../assets/icon/Social Links.svg";
 
 const Footer = () => {
   return (
@@ -44,6 +45,16 @@ const Footer = () => {
           </label>
         </div>
       </Top>
+
+      <Bottom>
+        <div className="left">
+          <img src={socials} alt="SocialLinks" />
+        </div>
+
+        <div className="right">
+          <p>&copy; 2023 WeCare. All rights reserved</p>
+        </div>
+      </Bottom>
     </Parent>
   );
 };
@@ -51,7 +62,7 @@ const Footer = () => {
 // Styled Components
 
 const Parent = styled.div`
-  padding: 3rem 6rem 6rem;
+  padding: 3rem 6rem 3rem;
   background: #30157a;
 `;
 
@@ -59,6 +70,9 @@ const Top = styled.div`
   display: flex;
   align-items: start;
   gap: 8rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   .begin {
     color: #fff;
@@ -140,6 +154,22 @@ const Top = styled.div`
         cursor: pointer;
       }
     }
+  }
+`;
+
+const Bottom = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left {
+    cursor: pointer;
+  }
+
+  .right {
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serif;
   }
 `;
 
