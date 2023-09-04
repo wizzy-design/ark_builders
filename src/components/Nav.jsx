@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import icon from "../assets/icon/nav_icon.png";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -30,7 +31,9 @@ const Nav = () => {
 
       {/* Nav Purple Button */}
       <Button>
-        <button>Become a Client</button>
+        <button>
+          <Link to="/login">Become a Client</Link>
+        </button>
       </Button>
     </Parent>
   );
@@ -82,10 +85,14 @@ const Button = styled.div`
     background: #30157a;
     padding: 0.6rem 2rem;
     font-size: 0.8rem;
-    color: #fff;
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
   }
 `;
 
