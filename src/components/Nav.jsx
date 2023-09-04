@@ -31,9 +31,9 @@ const Nav = () => {
 
       {/* Nav Purple Button */}
       <Button>
-        <button>
-          <Link to="/login">Become a Client</Link>
-        </button>
+        <Link to="/login">
+          <button>Become a Client</button>
+        </Link>
       </Button>
     </Parent>
   );
@@ -88,9 +88,9 @@ const Button = styled.div`
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
+    color: #fff;
 
     a {
-      color: #fff;
       text-decoration: none;
     }
   }

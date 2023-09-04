@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import eyeoff from "../assets/icon/eye-off.svg";
 import eyeon from "../assets/icon/eye-on.svg";
+import { Link } from "react-router-dom";
 
 const PasswordInput = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -21,7 +22,9 @@ const PasswordInput = () => {
       <UnmaskIcon onClick={togglePasswordVisibility}>
         {showPassword ? <img src={eyeon} /> : <img src={eyeoff} />}
       </UnmaskIcon>
-      <span id="forgot"> Forgot password?</span>
+      <Link to="/login2">
+        <span id="forgot"> Forgot password?</span>
+      </Link>
     </PasswordInputContainer>
   );
 };
