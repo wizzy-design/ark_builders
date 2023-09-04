@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import bgImage from "../assets/img/loginImage.svg";
 import logo from "../assets/icon/loginLogo.svg";
+import gmail from "../assets/icon/gmail.svg";
+import email from "../assets/icon/email.svg";
+import outlook from "../assets/icon/outlook.svg";
 import google from "../assets/icon/google.svg";
 import { Link } from "react-router-dom";
 
-const Login2 = () => {
+const Login3 = () => {
   return (
     <Parent>
       <div className="left">
@@ -32,29 +35,38 @@ const Login2 = () => {
         <img id="logo" src={logo} alt="Logo Icon" />
 
         <div className="title">
-          <h2>Forgot Password </h2>
-          <small>No worries, we would send your reset instructions</small>
+          <h2>Check your email</h2>
+          <small>
+            <br />
+            We sent an email to james@ubagroup.com with instructions <br /> on
+            how to reset password.
+          </small>
+          <div className="apurp">
+            <small id="purp">Change email address</small>
+          </div>
         </div>
 
-        <form>
-          <div className="inputs">
-            <label htmlFor="email">Email</label>
-            <input id="inputs" type="text" placeholder="james@ubagroup.com" />
+        <div className="buttons">
+          <button>
+            <img id="Gmail" src={gmail} alt="Gmail" /> Open Gmail
+          </button>
+          <button>
+            <img id="Email" src={email} alt="Email" /> Open Email app
+          </button>
+          <button>
+            <img src={outlook} alt="Gmail" /> Open Outlook
+          </button>
+        </div>
 
-            <Link to="/login3">
-              <input id="submit" type="submit" value="Reset Password" />
-            </Link>
-            <div id="signup">
-              <Link to="/login"> &lt;&lt;&lt; Back to Login</Link>
-            </div>
-          </div>
-        </form>
+        <div id="signup">
+          <Link to="/login"> &lt;&lt;&lt; Back to Login</Link>
+        </div>
       </Right>
     </Parent>
   );
 };
 
-// Styled Components
+// Styled Component
 
 const Parent = styled.div`
   display: grid;
@@ -94,7 +106,7 @@ const Parent = styled.div`
 `;
 
 const Right = styled.div`
-  padding-top: 7rem;
+  padding-top: 3rem;
 
   #logo {
     width: 3rem;
@@ -112,56 +124,57 @@ const Right = styled.div`
       color: #324054;
       font-family: "Montserrat", sans-serif;
     }
+
+    .apurp {
+      margin-top: 1rem;
+
+      #purp {
+        color: #552bcc;
+        font-size: 0.75rem;
+        cursor: pointer;
+      }
+    }
   }
 
-  .inputs {
-    label {
-      display: block;
-      font-weight: 600;
-      font-size: 0.8rem;
-      font-family: "Montserrat Alternates", sans-serif;
-      padding-bottom: 0.4rem;
+  .buttons {
+    button {
+      display: flex;
       color: #324054;
-    }
-
-    input {
+      font-weight: 600;
       width: 70%;
-      padding: 0.8em;
-      text-indent: 20px;
-      margin-bottom: 3rem;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      background: none;
       border-radius: 0.3rem;
-    }
-
-    input::placeholder {
-      padding-left: 0.1rem;
-      color: #324054;
-      font-family: "Montserrat", sans-serif;
-    }
-
-    #submit {
-      margin: 2rem 0 0 0;
-      font-family: "Montserrat Alternates", sans-serif;
-      font-weight: 600;
-      color: #fff;
-      background: #552bcc;
-      border: none;
+      margin-bottom: 1.5rem;
+      border: 0.5px solid #c2c2c2;
       cursor: pointer;
-      border-radius: 0.3rem;
-    }
 
-    #signup {
-      padding-top: 1rem;
-      width: 70%;
-      text-align: center;
-      font-family: "Montserrat Alternates", sans-serif;
-      font-size: 0.7rem;
-
-      a {
-        text-decoration: none;
-        color: #324054;
+      img {
+        width: 2.5rem;
+        padding-right: 0.5rem;
       }
+
+      #Email,
+      #Gmail {
+        width: 2rem;
+      }
+    }
+  }
+
+  #signup {
+    padding-top: 1rem;
+    width: 70%;
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 0.7rem;
+
+    a {
+      text-decoration: none;
+      color: #324054;
     }
   }
 `;
 
-export default Login2;
+export default Login3;
